@@ -1,0 +1,42 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background:  #000000;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color:   #ffffff;
+}
+/*  */
+section {
+  padding: 40px 20px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+}
+
+@font-face {
+  font-family: "Cormorant Garamond", serif;
+  src: local("Cormorant Garamond", serif),
+   url("./Fonts/Allura/Allura-Regular.ttf") format("truetype");
+  /* font-weight: bold; */
+ }
+ @font-face {
+  font-family: "Comfortaa";
+  src: local("Comfortaa"),
+   url("./Fonts/Comfortaa//Comfortaa-VariableFont_wght.ttf") format("truetype");
+  /* font-weight: bold; */
+ }
+
+ @font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display"),
+   url("./Fonts/Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+ }
