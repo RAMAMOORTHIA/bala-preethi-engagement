@@ -8,7 +8,7 @@ const Quickball = () => {
   return (
     <>
       <div className="quickball" onClick={() => setShowDeveloper(true)}>
-      🛠️
+      👨‍💻
       </div>
       {showDeveloper && <DeveloperInfo onClose={() => setShowDeveloper(false)} />}
     </>
