@@ -1,8 +1,15 @@
 #root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
+  min-height: 100vh;
   text-align: center;
+
+  background: radial-gradient(
+    circle at center,
+    #3b0015 0%,
+    #25000d 50%,
+    #0b0004 100%
+  );
+
+  color: #f8e8d0;
 }
 
 .logo {
@@ -11,19 +18,20 @@
   will-change: filter;
   transition: filter 300ms;
 }
-/*  */
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em rgba(212, 175, 55, 0.8));
 }
-/*  */
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em rgba(212, 175, 55, 0.8));
 }
 
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -40,24 +48,38 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #f8e8d0;
 }
+
 .mute-button {
   position: fixed;
   top: 20px;
   right: 5px;
-  background: transparent;
-  color: #333;
-  border: none;
+
+  background: rgba(212, 175, 55, 0.15);
+
+  color: #f8e8d0;
+
+  border: 1px solid #d4af37;
+
   padding: 10px 14px;
+
   border-radius: 8px;
+
   font-size: 14px;
+
   cursor: pointer;
+
   z-index: 9999;
+
   transition: all 0.3s ease;
 }
 
-.border-map{
+.mute-button:hover {
+  background: rgba(212, 175, 55, 0.3);
+}
+
+.border-map {
   filter: brightness(0) invert(1);
 }
 
@@ -65,5 +87,5 @@
   width: 100%;
   height: 100%;
   position: relative;
-  pointer-events: none; /* important for background usage */
+  pointer-events: none;
 }
